@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create a Quad Solutions portal access request for your healthcare organization."
+    />
+    <title>Sign Up | Quad Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+  </head>
+  <body class="auth-page">
+
+    <header class="top">
+      <div class="wrap top-row">
+        <a class="brand" href="../index.html" aria-label="Quad Solutions home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3a7 7 0 1 0 4.95 11.95L21 19" />
+              <path d="M16.95 14.95L14 12" />
+            </svg>
+          </span>
+          <span class="brand-text">Quad <span class="solution"> Solutions</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="about.html">About Company</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="process.html">Process / Workflow</a>
+          <a class="nav-link" href="testimonials.html">Testimonials</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </nav>
+
+        <div class="actions">
+          <a class="nav-link" href="signin.html">Sign In</a>
+          <a class="btn btn-line" href="signup.html" aria-current="page">Sign Up</a>
+          <a class="btn btn-contact" href="contact.html">Contact</a>
+          <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobile-nav" data-menu hidden>
+        <nav aria-label="Mobile primary">
+          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="about.html">About Company</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="process.html">Process / Workflow</a>
+          <a class="nav-link" href="testimonials.html">Testimonials</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-link" href="signin.html">Sign In</a>
+          <a class="nav-link active" href="signup.html" aria-current="page">Sign Up</a>
+          <a class="btn btn-main" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero page-hero">
+        <div class="wrap">
+          <span class="eyebrow">Create Access</span>
+          <h1>Request a Quad Solutions portal account.</h1>
+          <p class="lead">
+            Create a secure account request so your team can track provider activity, document updates,
+            and service progress in one place.
+          </p>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrap">
+          <form
+            class="auth-box"
+            data-form
+            data-ok="Your portal access request has been submitted. A Quad Solutions administrator will follow up with next steps."
+            novalidate
+          >
+            <div class="form-head">
+              <span class="eyebrow">Sign Up</span>
+              <h2>Create your access request</h2>
+              <p>Complete the form below to request a secure client portal account.</p>
+            </div>
+
+            <div class="alert" data-alert hidden role="status" aria-live="polite"></div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="up-name">First Name</label>
+                <input id="up-name" name="name" type="text" autocomplete="name" required data-error="up-error-name" aria-describedby="up-error-name" />
+                <p class="error" id="up-error-name" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="up-practice">Last Name</label>
+                <input id="up-practice" name="practice" type="text" autocomplete="organization" required data-error="up-error-practice" aria-describedby="up-error-practice" />
+                <p class="error" id="up-error-practice" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="up-email">Email</label>
+                <input id="up-email" name="email" type="email" autocomplete="email" required data-error="up-error-email" aria-describedby="up-error-email" />
+                <p class="error" id="up-error-email" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="up-phone">Phone Number</label>
+                <input id="up-phone" name="phone" type="tel" autocomplete="tel" required data-error="up-error-phone" aria-describedby="up-error-phone" />
+                <p class="error" id="up-error-phone" aria-live="polite"></p>
+              </div>
+
+              <div class="field full">
+                <label for="up-service">Primary Need</label>
+                <select id="up-service" name="need" required data-error="up-error-service" aria-describedby="up-error-service">
+                  <option value="">Select a primary need</option>
+                  <option>Credentialing visibility</option>
+                  <option>Insurance enrollment coordination</option>
+                  <option>CAQH management updates</option>
+                  <option>Documentation and compliance tracking</option>
+                  <option>Multi-service oversight</option>
+                </select>
+                <p class="error" id="up-error-service" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="up-pass">Password</label>
+                <input id="up-pass" name="password" type="password" autocomplete="new-password" minlength="8" required data-error="up-error-pass" aria-describedby="up-error-pass" />
+                <p class="error" id="up-error-pass" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="up-pass-2">Confirm Password</label>
+                <input id="up-pass-2" name="password2" type="password" autocomplete="new-password" minlength="8" required data-error="up-error-pass-2" data-match="up-pass" data-match-message="Passwords must match." aria-describedby="up-error-pass-2" />
+                <p class="error" id="up-error-pass-2" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <button class="btn btn-main" type="submit">Create Access Request</button>
+            <p class="form-note">Already have an account? <a href="signin.html">Sign in here</a>.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Quad Solutions home">
+            <span class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3a7 7 0 1 0 4.95 11.95L21 19" />
+                <path d="M16.95 14.95L14 12" />
+              </svg>
+            </span>
+            <span class="brand-text">Quad Solutions</span>
+          </a>
+          <p class="footer-text">Secure account requests for credentialing visibility and workflow access.</p>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h2>Account</h2>
+          <a href="signin.html">Sign In</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <a href="faq.html">Privacy Policy</a>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+      <p>&copy; 2026 Quad Solutions. All rights reserved. <br>
+        Designed & developed by M Asim Fayyaz.</p>
+        <a href="#main">Back to top</a>
+      </div>
+    </footer>
+
+        <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>
