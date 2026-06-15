@@ -65,8 +65,6 @@ Frontend-Internship-Projects/
 │
 ├── Nexus/
 ├── Healthcare-Website/
-├── Portfolio-Website/
-└── Restaurant-Website/
 ```
 
 Each project is organized in its own folder and contains the source code, assets, and related files required for development and deployment.
